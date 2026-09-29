@@ -1,4 +1,4 @@
-# Yatube API
+# Microblog API
 
 REST API для социальной сети: пользователи публикуют посты, комментируют, 
 подписываются друг на друга и объединяются в группы.
@@ -32,7 +32,7 @@ JWT-аутентификацию, фильтрацию, поиск и разгр
 ### Через Docker 
 
 1. Клонировать репозиторий:
-    git clone https://github.com/endlesslessness/api_final_yatube.git
+    git clone https://github.com/endlesslessness/microblog-api.git
     cd api_final_yatube
 
 2. Создать .env в корне проекта:
