@@ -92,13 +92,13 @@ curl -X POST http://localhost:8000/api/token/ \
   "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 }
 
-Создание поста
+Создание поста  
 curl -X POST http://localhost:8000/api/posts/ \
   -H "Authorization: Bearer <access_token>" \
   -H "Content-Type: application/json" \
   -d '{"text": "Мой первый пост", "group": 1}'
 
-Подписка на пользователя
+Подписка на пользователя  
 curl -X POST http://localhost:8000/api/follow/ \
   -H "Authorization: Bearer <access_token>" \
   -H "Content-Type: application/json" \
