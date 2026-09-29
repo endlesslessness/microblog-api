@@ -32,25 +32,25 @@ JWT-аутентификацию, фильтрацию, поиск и разгр
 ### Через Docker 
 
 1. Клонировать репозиторий:
-    git clone https://github.com/endlesslessness/microblog-api.git
-    cd api_final_yatube
+    git clone https://github.com/endlesslessness/microblog-api.git  
+    cd api_final_yatube  
 
 2. Создать .env в корне проекта:
-    env
-    DJANGO_SECRET_KEY=your-secret-key-here
-    DJANGO_DEBUG=False
-    DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
-
-    POSTGRES_DB=yatube
-    POSTGRES_USER=yatube
-    POSTGRES_PASSWORD=yatube
-    DB_HOST=db
-    DB_PORT=5432
-    Запустить:
-
+    env  
+    DJANGO_SECRET_KEY=your-secret-key-here  
+    DJANGO_DEBUG=False  
+    DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1  
+  
+    POSTGRES_DB=yatube  
+    POSTGRES_USER=yatube  
+    POSTGRES_PASSWORD=yatube  
+    DB_HOST=db  
+    DB_PORT=5432  
+    Запустить:  
+  
 3. Запуск
-    docker-compose up --build
-    API будет доступно по адресу: http://localhost:8000/api/
+    docker-compose up --build  
+    API будет доступно по адресу: http://localhost:8000/api/  
 
 ###  Локально (без Docker)
     python3 -m venv venv
@@ -63,22 +63,22 @@ JWT-аутентификацию, фильтрацию, поиск и разгр
 
 
 ##  Основные эндпоинты
-Метод	Эндпоинт	Описание	Доступ
-POST	/api/token/	Получить JWT-токен	Все
-POST	/api/token/refresh/	Обновить JWT-токен	Все
-POST	/api/register/	Регистрация пользователя	Все
-GET	/api/posts/	Список постов (пагинация 10)	Все
-POST	/api/posts/	Создать пост	Авторизованные
-GET	/api/posts/{id}/	Детали поста	Все
-PATCH	/api/posts/{id}/	Обновить пост	Автор
-DELETE	/api/posts/{id}/	Удалить пост	Автор
-GET	/api/posts/?group={id}	Фильтр постов по группе	Все
-GET	/api/groups/	Список групп	Все
-GET	/api/posts/{post_id}/comments/	Комментарии к посту	Все
-POST	/api/posts/{post_id}/comments/	Добавить комментарий	Авторизованные
-GET	/api/follow/	Мои подписки	Авторизованные
-POST	/api/follow/	Подписаться	Авторизованные
-GET	/api/follow/?search={username}	Поиск по подпискам	Авторизованные
+Метод	Эндпоинт	Описание	Доступ  
+POST	/api/token/	Получить JWT-токен	Все  
+POST	/api/token/refresh/	Обновить JWT-токен	Все  
+POST	/api/register/	Регистрация пользователя	Все  
+GET	/api/posts/	Список постов (пагинация 10)	Все  
+POST	/api/posts/	Создать пост	Авторизованные  
+GET	/api/posts/{id}/	Детали поста	Все  
+PATCH	/api/posts/{id}/	Обновить пост	Автор  
+DELETE	/api/posts/{id}/	Удалить пост	Автор  
+GET	/api/posts/?group={id}	Фильтр постов по группе	Все  
+GET	/api/groups/	Список групп	Все  
+GET	/api/posts/{post_id}/comments/	Комментарии к посту	Все  
+POST	/api/posts/{post_id}/comments/	Добавить комментарий	Авторизованные  
+GET	/api/follow/	Мои подписки	Авторизованные  
+POST	/api/follow/	Подписаться	Авторизованные  
+GET	/api/follow/?search={username}	Поиск по подпискам	Авторизованные  
 
 ##  Примеры запросов
 Получение JWT-токена
