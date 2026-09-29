@@ -81,7 +81,7 @@ POST	/api/follow/	Подписаться	Авторизованные
 GET	/api/follow/?search={username}	Поиск по подпискам	Авторизованные  
 
 ##  Примеры запросов (например для пользователя george)
-Получение JWT-токена
+Получение JWT-токена  
 curl -X POST http://localhost:8000/api/token/ \
   -H "Content-Type: application/json" \
   -d '{"username": "george", "password": "123"}'
