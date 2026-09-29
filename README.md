@@ -31,7 +31,7 @@ JWT-аутентификацию, фильтрацию, поиск и разгр
 
 ### Через Docker 
 
-1. Клонировать репозиторий:
+1. Клонировать репозиторий:  
     git clone https://github.com/endlesslessness/microblog-api.git  
     cd api_final_yatube  
 
@@ -146,34 +146,34 @@ test_follow.py — подписки, валидация;
 
 test_jwt.py — аутентификация через JWT.
 
-##  Структура проекта
-api_final_yatube/
-├── tests/                    # Тесты на pytest
-│   ├── fixtures/             # Фикстуры
-│   ├── conftest.py
-│   ├── test_comment.py
-│   ├── test_follow.py
-│   ├── test_group.py
-│   ├── test_jwt.py
-│   └── test_post.py
-├── yatube_api/
-│   ├── api/                  # API-приложение
-│   │   ├── permissions.py    # Кастомные права
-│   │   ├── serializers.py    # Сериализаторы
-│   │   ├── urls.py           # Маршруты API
-│   │   └── views.py          # ViewSet'ы
-│   ├── posts/                # Модели: Post, Group, Comment, Follow
-│   ├── static/redoc.yaml     # OpenAPI-схема
-│   ├── manage.py
-│   └── yatube_api/           # Настройки проекта
-├── postman_collection/       # Postman-коллекция для тестирования
-├── .env.example
-├── .gitignore
-├── pytest.ini
-├── requirements.txt
-├── setup.cfg
-└── README.md
-
+##  Структура проекта  
+api_final_yatube/  
+├── tests/                    # Тесты на pytest  
+│   ├── fixtures/             # Фикстуры  
+│   ├── conftest.py  
+│   ├── test_comment.py  
+│   ├── test_follow.py  
+│   ├── test_group.py  
+│   ├── test_jwt.py  
+│   └── test_post.py  
+├── yatube_api/  
+│   ├── api/                  # API-приложение  
+│   │   ├── permissions.py    # Кастомные права  
+│   │   ├── serializers.py    # Сериализаторы  
+│   │   ├── urls.py           # Маршруты API  
+│   │   └── views.py          # ViewSet'ы  
+│   ├── posts/                # Модели: Post, Group, Comment, Follow  
+│   ├── static/redoc.yaml     # OpenAPI-схема  
+│   ├── manage.py  
+│   └── yatube_api/           # Настройки проекта  
+├── postman_collection/       # Postman-коллекция для тестирования  
+├── .env.example  
+├── .gitignore  
+├── pytest.ini  
+├── requirements.txt  
+├── setup.cfg  
+└── README.md  
+  
 ##  Что можно улучшить
 - Добавить Swagger UI в дополнение к ReDoc
 - Настроить CI/CD (GitHub Actions: линтер + тесты)
